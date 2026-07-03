@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มหกรรมพืชสวนโลก อุดรธานี 2569 | Udon Thani International Horticultural Expo 2026</title>
+    <meta name="description" content="มหกรรมพืชสวนโลก อุดรธานี 2569 - Taste for Greens, Living in Harmony. 1 พฤศจิกายน 2569 – 14 มีนาคม 2570 ณ พื้นที่ชุ่มน้ำหนองแด อุดรธานี">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">🌿</div>
+                <div class="logo-text">
+                    <span class="logo-main" data-th="EXPO อุดรธานี" data-en="EXPO Udon Thani" data-zh="博览会 乌隆他尼">EXPO อุดรธานี</span>
+                    <span class="logo-sub" data-th="พืชสวนโลก 2569" data-en="Horticultural 2026" data-zh="园艺博览会 2026">พืชสวนโลก 2569</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-th="หน้าแรก" data-en="Home" data-zh="首页">หน้าแรก</a></li>
+                <li><a href="#about" class="nav-link" data-th="เกี่ยวกับงาน" data-en="About" data-zh="关于">เกี่ยวกับงาน</a></li>
+                <li><a href="#highlights" class="nav-link" data-th="ไฮไลท์" data-en="Highlights" data-zh="亮点">ไฮไลท์</a></li>
+                <li><a href="#info" class="nav-link" data-th="ข้อมูลงาน" data-en="Event Info" data-zh="活动信息">ข้อมูลงาน</a></li>
+                <li><a href="#contact" class="nav-link" data-th="ติดต่อ" data-en="Contact" data-zh="联系">ติดต่อ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="th" id="btnLangTh">
+                        <span class="lang-flag">🇹🇭</span>
+                        <span class="lang-label">ไทย</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en" id="btnLangEn">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-label">EN</span>
+                    </button>
+                    <button class="lang-btn" data-lang="zh" id="btnLangZh">
+                        <span class="lang-flag">🇨🇳</span>
+                        <span class="lang-label">中文</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <img src="images/hero-banner.png" alt="Udon Thani Expo 2026 Banner">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-th="1 พ.ย. 2569 – 14 มี.ค. 2570" data-en="1 Nov 2026 – 14 Mar 2027" data-zh="2026年11月1日 – 2027年3月14日">
+                1 พ.ย. 2569 – 14 มี.ค. 2570
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line1" data-th="มหกรรมพืชสวนโลก" data-en="International Horticultural" data-zh="国际园艺">มหกรรมพืชสวนโลก</span>
+                <span class="hero-title-line2" data-th="อุดรธานี 2569" data-en="Expo 2026" data-zh="博览会 2026">อุดรธานี 2569</span>
+            </h1>
+            <p class="hero-subtitle" data-th="รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน" data-en="Taste for Greens, Living in Harmony" data-zh="品味绿色，和谐共生">
+                รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน
+            </p>
+            <p class="hero-location" data-th="📍 พื้นที่ชุ่มน้ำหนองแด ตำบลกุดสระ อำเภอเมือง จังหวัดอุดรธานี" data-en="📍 Nong Daeng Wetland, Kud Sa, Mueang, Udon Thani, Thailand" data-zh="📍 泰国乌隆他尼府 农丹湿地">
+                📍 พื้นที่ชุ่มน้ำหนองแด ตำบลกุดสระ อำเภอเมือง จังหวัดอุดรธานี
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-wrapper">
+                <div class="countdown-label" data-th="นับถอยหลังสู่วันเปิดงาน" data-en="Countdown to Opening Day" data-zh="开幕倒计时">นับถอยหลังสู่วันเปิดงาน</div>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countDays">000</span>
+                        <span class="countdown-unit" data-th="วัน" data-en="Days" data-zh="天">วัน</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countHours">00</span>
+                        <span class="countdown-unit" data-th="ชั่วโมง" data-en="Hours" data-zh="时">ชั่วโมง</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countMinutes">00</span>
+                        <span class="countdown-unit" data-th="นาที" data-en="Minutes" data-zh="分">นาที</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countSeconds">00</span>
+                        <span class="countdown-unit" data-th="วินาที" data-en="Seconds" data-zh="秒">วินาที</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="hero-cta" data-th="สำรวจเพิ่มเติม ↓" data-en="Explore More ↓" data-zh="了解更多 ↓">สำรวจเพิ่มเติม ↓</a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-th="เกี่ยวกับงาน" data-en="About the Expo" data-zh="关于博览会">เกี่ยวกับงาน</span>
+                <h2 class="section-title" data-th="ความหลากหลายแห่งชีวิต" data-en="Diversity of Life" data-zh="生命的多样性">ความหลากหลายแห่งชีวิต</h2>
+                <p class="section-desc" data-th="มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด 'Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน' งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี" data-en="The Udon Thani International Horticultural Expo, endorsed by the International Association of Horticultural Producers (AIPH) as an A1-level exposition — the highest tier — carries the theme 'Diversity of Life — Taste for Greens, Living in Harmony.' Held at the Nong Daeng Wetland, a vital ecological site in Udon Thani Province, this grand event will showcase the rich biodiversity and horticultural heritage of Thailand and the Greater Mekong Region." data-zh="乌隆他尼国际园艺博览会获得国际园艺生产者协会（AIPH）认证为最高级别A1级博览会，主题为"生命的多样性——品味绿色，和谐共生"。博览会在乌隆他尼府重要的生态湿地——农丹湿地举办，将展示泰国和大湄公河地区丰富的生物多样性和园艺遗产。">
+                    มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด "Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน" งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี
+                </p>
+            </div>
+            <div class="about-grid">
+                <!-- Large Master Plan Map Container -->
+                <div class="interactive-map-wrapper">
+                    <div class="interactive-map" id="interactiveMap">
+                        <img src="images/about-section.png" alt="Expo Master Plan" class="map-base-img">
+
+                        <!-- Chinese overlay labels (Only shown when page language is Chinese) -->
+                        <div class="map-zh-label" style="top:4%; left:36%;">综合管理大楼</div>
+                        <div class="map-zh-label" style="top:11%; left:20%;">温室展馆</div>
+                        <div class="map-zh-label" style="top:7%; left:56%;">兰花展馆</div>
+                        <div class="map-zh-label" style="top:6%; left:77%;">皇家纪念馆</div>
+                        <div class="map-zh-label" style="top:16%; left:81%;">企业展园</div>
+                        <div class="map-zh-label" style="top:21%; left:14%;">伊桑文化村</div>
+                        <div class="map-zh-label" style="top:27%; left:22%;">国际展园</div>
+                        <div class="map-zh-label" style="top:37%; left:10%;">红莲池 / 湿地步道</div>
+                        <div class="map-zh-label" style="top:45%; left:27%;">活动游乐场</div>
+                        <div class="map-zh-label" style="top:58%; left:14%;">跨水大桥</div>
+                        <div class="map-zh-label" style="top:40%; left:76%;">花卉观赏植物园</div>
+                        <div class="map-zh-label" style="top:48%; left:86%;">仙人掌展馆</div>
+                        <div class="map-zh-label" style="top:61%; left:79%;">室内植物展馆</div>
+                        <div class="map-zh-label" style="top:71%; left:71%;">室外植物展 / 蝴蝶花园</div>
+                        <div class="map-zh-label" style="top:81%; left:56%;">信息咨询中心</div>
+                        <div class="map-zh-label" style="top:92%; left:40%;">接待大厅 / 餐饮中心</div>
+                    </div>
+                    <div class="about-image-badge" style="position:relative; display:inline-flex; margin-top:16px;">
+                        <span class="badge-icon">🏆</span>
+                        <span data-th="ระดับ A1 โดย AIPH" data-en="A1 Level by AIPH" data-zh="AIPH A1级认证">ระดับ A1 โดย AIPH</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Cards Row below the map -->
+            <div class="about-cards-row">
+                <div class="about-card">
+                    <div class="card-icon">🌸</div>
+                    <h3 data-th="พันธุ์ไม้นานาชาติ" data-en="International Flora" data-zh="国际植物">พันธุ์ไม้นานาชาติ</h3>
+                    <p data-th="ชมความงามของพันธุ์ไม้หายากจากทั่วทุกมุมโลก นำเสนอภูมิปัญญาด้านพืชสวนจากหลากหลายประเทศ" data-en="Discover rare and exotic plant species from around the world, showcasing horticultural wisdom from diverse nations." data-zh="欣赏来自世界各地的珍稀植物品种，展示多国园艺智慧。">
+                        ชมความงามของพันธุ์ไม้หายากจากทั่วทุกมุมโลก นำเสนอภูมิปัญญาด้านพืชสวนจากหลากหลายประเทศ
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💧</div>
+                    <h3 data-th="พื้นที่ชุ่มน้ำหนองแด" data-en="Nong Daeng Wetland" data-zh="农丹湿地">พื้นที่ชุ่มน้ำหนองแด</h3>
+                    <p data-th="สถานที่จัดงานตั้งอยู่บนพื้นที่ชุ่มน้ำหนองแดขนาดกว่า 1,030 ไร่ ที่อุดมไปด้วยระบบนิเวศอันหลากหลาย" data-en="The expo site spans over 1,030 rai of the Nong Daeng Wetland, teeming with a rich and diverse ecosystem." data-zh="博览会场地位于面积超过1030莱的农丹湿地，拥有丰富多样的生态系统。">
+                        สถานที่จัดงานตั้งอยู่บนพื้นที่ชุ่มน้ำหนองแดขนาดกว่า 1,030 ไร่ ที่อุดมไปด้วยระบบนิเวศอันหลากหลาย
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🌏</div>
+                    <h3 data-th="ประเทศร่วมจัด" data-en="Participating Countries" data-zh="参展国家">ประเทศร่วมจัด</h3>
+                    <p data-th="กว่า 30 ประเทศทั่วโลกร่วมจัดแสดงสวนนานาชาติ นำเสนอวัฒนธรรมและความก้าวหน้าทางพืชสวน" data-en="Over 30 countries worldwide participate in showcasing international gardens, presenting their culture and horticultural advancements." data-zh="全球30多个国家参与展示国际花园，展现各国文化 and 园艺进步。">
+                        กว่า 30 ประเทศทั่วโลกร่วมจัดแสดงสวนนานาชาติ นำเสนอวัฒนธรรมและความก้าวหน้าทางพืชสวน
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="135">0</span>
+                    <span class="stat-label" data-th="วัน" data-en="Days" data-zh="天">วัน</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-th="ประเทศ" data-en="Countries" data-zh="国家">ประเทศ</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1030">0</span>
+                    <span class="stat-label" data-th="ไร่" data-en="Rai (Area)" data-zh="莱（面积）">ไร่</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">M+</span>
+                    <span class="stat-label" data-th="ผู้เข้าชมที่คาดหวัง" data-en="Expected Visitors" data-zh="预计游客">ผู้เข้าชมที่คาดหวัง</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS SECTION ===== -->
+    <section id="highlights" class="highlights-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-th="ไฮไลท์ของงาน" data-en="Expo Highlights" data-zh="博览会亮点">ไฮไลท์ของงาน</span>
+                <h2 class="section-title" data-th="สิ่งที่ไม่ควรพลาด" data-en="Things You Shouldn't Miss" data-zh="不容错过">สิ่งที่ไม่ควรพลาด</h2>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card highlight-large">
+                    <img src="images/highlights.png" alt="Expo Highlights" loading="lazy">
+                    <div class="highlight-content">
+                        <h3 data-th="สวนนานาชาติ" data-en="International Gardens" data-zh="国际花园">สวนนานาชาติ</h3>
+                        <p data-th="สัมผัสสวนจากหลากหลายประเทศทั่วโลก ที่ถูกออกแบบและจัดสร้างอย่างงดงาม" data-en="Experience beautifully designed gardens from countries around the world." data-zh="体验来自世界各国精心设计的美丽花园。">
+                            สัมผัสสวนจากหลากหลายประเทศทั่วโลก ที่ถูกออกแบบและจัดสร้างอย่างงดงาม
+                        </p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎭</div>
+                    <h3 data-th="การแสดงทางวัฒนธรรม" data-en="Cultural Performances" data-zh="文化表演">การแสดงทางวัฒนธรรม</h3>
+                    <p data-th="ชมการแสดงทางวัฒนธรรมจากศิลปินทั้งในและต่างประเทศ พร้อมกิจกรรมเวิร์คชอปสุดพิเศษ" data-en="Enjoy cultural performances from both local and international artists, plus exclusive workshops." data-zh="欣赏国内外艺术家的文化表演，参加独家工作坊。">
+                        ชมการแสดงทางวัฒนธรรมจากศิลปินทั้งในและต่างประเทศ พร้อมกิจกรรมเวิร์คชอปสุดพิเศษ
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🔬</div>
+                    <h3 data-th="นวัตกรรมเกษตร" data-en="Agri Innovation" data-zh="农业创新">นวัตกรรมเกษตร</h3>
+                    <p data-th="พบกับเทคโนโลยีการเกษตรสมัยใหม่ นวัตกรรมสีเขียว และเทคโนโลยีเพื่อความยั่งยืน" data-en="Discover modern agricultural technologies, green innovations, and sustainability solutions." data-zh="探索现代农业技术、绿色创新和可持续发展解决方案。">
+                        พบกับเทคโนโลยีการเกษตรสมัยใหม่ นวัตกรรมสีเขียว และเทคโนโลยีเพื่อความยั่งยืน
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🍜</div>
+                    <h3 data-th="อาหารท้องถิ่น" data-en="Local Cuisine" data-zh="当地美食">อาหารท้องถิ่น</h3>
+                    <p data-th="ลิ้มรสอาหารอีสานแท้ๆ และอาหารนานาชาติจากร้านอาหารชื่อดังทั้งในและต่างประเทศ" data-en="Savor authentic Isan cuisine and international dishes from renowned restaurants." data-zh="品尝正宗伊桑美食和来自知名餐厅的国际美食。">
+                        ลิ้มรสอาหารอีสานแท้ๆ และอาหารนานาชาติจากร้านอาหารชื่อดังทั้งในและต่างประเทศ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENT INFO SECTION ===== -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-th="ข้อมูลงาน" data-en="Event Information" data-zh="活动信息">ข้อมูลงาน</span>
+                <h2 class="section-title" data-th="วางแผนการเดินทาง" data-en="Plan Your Visit" data-zh="规划您的行程">วางแผนการเดินทาง</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card glass">
+                    <div class="info-card-icon">📅</div>
+                    <h3 data-th="วันจัดงาน" data-en="Event Dates" data-zh="活动日期">วันจัดงาน</h3>
+                    <p data-th="1 พฤศจิกายน 2569 – 14 มีนาคม 2570 (135 วัน)" data-en="1 November 2026 – 14 March 2027 (135 Days)" data-zh="2026年11月1日 – 2027年3月14日（135天）">
+                        1 พฤศจิกายน 2569 – 14 มีนาคม 2570 (135 วัน)
+                    </p>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-card-icon">📍</div>
+                    <h3 data-th="สถานที่" data-en="Location" data-zh="地点">สถานที่</h3>
+                    <p data-th="พื้นที่ชุ่มน้ำหนองแด ตำบลกุดสระ อำเภอเมือง จังหวัดอุดรธานี" data-en="Nong Daeng Wetland, Kud Sa Sub-district, Mueang District, Udon Thani Province" data-zh="乌隆他尼府 城区 古莎分区 农丹湿地">
+                        พื้นที่ชุ่มน้ำหนองแด ตำบลกุดสระ อำเภอเมือง จังหวัดอุดรธานี
+                    </p>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-card-icon">⏰</div>
+                    <h3 data-th="เวลาเปิด-ปิด" data-en="Opening Hours" data-zh="开放时间">เวลาเปิด-ปิด</h3>
+                    <p data-th="เปิดให้เข้าชมทุกวัน 08:30 – 22:00 น." data-en="Open daily 08:30 AM – 10:00 PM" data-zh="每日开放 08:30 – 22:00">
+                        เปิดให้เข้าชมทุกวัน 08:30 – 22:00 น.
+                    </p>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-card-icon">🚗</div>
+                    <h3 data-th="การเดินทาง" data-en="Getting There" data-zh="交通指南">การเดินทาง</h3>
+                    <p data-th="สะดวกด้วยเครื่องบิน รถไฟ และรถโดยสาร มีบริการรถรับส่งจากสนามบินและสถานีขนส่ง" data-en="Convenient access by air, rail, and bus. Shuttle services available from airport and bus terminal." data-zh="可乘飞机、火车和巴士前往。机场和汽车站提供班车服务。">
+                        สะดวกด้วยเครื่องบิน รถไฟ และรถโดยสาร มีบริการรถรับส่งจากสนามบินและสถานีขนส่ง
+                    </p>
+                </div>
+            </div>
+
+            <!-- Map embed placeholder -->
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=ทุ่งหนองแด%20อุดรธานี&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER ===== -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌿</span>
+                        <div>
+                            <h3 data-th="มหกรรมพืชสวนโลก อุดรธานี" data-en="Udon Thani International Horticultural Expo" data-zh="乌隆他尼国际园艺博览会">มหกรรมพืชสวนโลก อุดรธานี</h3>
+                            <p data-th="Diversity of Life – รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน" data-en="Diversity of Life – Taste for Greens, Living in Harmony" data-zh="生命的多样性 – 品味绿色，和谐共生">Diversity of Life – รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-th="ลิงก์ด่วน" data-en="Quick Links" data-zh="快速链接">ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="#hero" data-th="หน้าแรก" data-en="Home" data-zh="首页">หน้าแรก</a></li>
+                        <li><a href="#about" data-th="เกี่ยวกับงาน" data-en="About" data-zh="关于">เกี่ยวกับงาน</a></li>
+                        <li><a href="#highlights" data-th="ไฮไลท์" data-en="Highlights" data-zh="亮点">ไฮไลท์</a></li>
+                        <li><a href="#info" data-th="ข้อมูลงาน" data-en="Event Info" data-zh="活动信息">ข้อมูลงาน</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-th="ติดต่อเรา" data-en="Contact Us" data-zh="联系我们">ติดต่อเรา</h4>
+                    <ul>
+                        <li>📧 xxx@xxx.xxx</li>
+                        <li>📞 xxx-xxx-xxxx</li>
+                        <li data-th="📍 xxx xxx" data-en="📍 xxx xxx" data-zh="📍 xxx xxx">📍 xxx xxx</li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-th="ติดตามเรา" data-en="Follow Us" data-zh="关注我们">ติดตามเรา</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-th="© 2569 มหกรรมพืชสวนโลก อุดรธานี. สงวนลิขสิทธิ์ทุกประการ." data-en="© 2026 Udon Thani International Horticultural Expo. All rights reserved." data-zh="© 2026 乌隆他尼国际园艺博览会。版权所有。">
+                    © 2569 มหกรรมพืชสวนโลก อุดรธานี. สงวนลิขสิทธิ์ทุกประการ.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
