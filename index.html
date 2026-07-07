@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="scrollProgressBar"></div>
 
     <!-- ===== NAVIGATION ===== -->
     <nav id="navbar" class="navbar">
@@ -63,6 +64,7 @@
         <div class="hero-bg">
             <img src="images/hero-banner.png" alt="Udon Thani Expo 2026 Banner">
             <div class="hero-overlay"></div>
+            <div class="hero-clouds"></div>
         </div>
         <div class="hero-particles" id="particles"></div>
         <div class="hero-content">
@@ -123,58 +125,52 @@
         </div>
     </section>
 
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-header">
+                <h3 class="stats-title" data-th="สถิติและข้อมูลสำคัญ" data-en="Key Statistics" data-zh="关键数据与统计">สถิติและข้อมูลสำคัญ</h3>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="135">0</span>
+                    <span class="stat-label" data-th="วัน" data-en="Days" data-zh="天">วัน</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-th="ประเทศ" data-en="Countries" data-zh="国家">ประเทศ</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1030">0</span>
+                    <span class="stat-label" data-th="ไร่" data-en="Rai (Area)" data-zh="莱（面积）">ไร่</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">M+</span>
+                    <span class="stat-label" data-th="ผู้เข้าชมที่คาดหวัง" data-en="Expected Visitors" data-zh="预计游客">ผู้เข้าชมที่คาดหวัง</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-th="เกี่ยวกับงาน" data-en="About the Expo" data-zh="关于博览会">เกี่ยวกับงาน</span>
-                <h2 class="section-title" data-th="ความหลากหลายแห่งชีวิต" data-en="Diversity of Life" data-zh="生命的多样性">ความหลากหลายแห่งชีวิต</h2>
-                <p class="section-desc" data-th="มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด 'Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน' งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี" data-en="The Udon Thani International Horticultural Expo, endorsed by the International Association of Horticultural Producers (AIPH) as an A1-level exposition — the highest tier — carries the theme 'Diversity of Life — Taste for Greens, Living in Harmony.' Held at the Nong Daeng Wetland, a vital ecological site in Udon Thani Province, this grand event will showcase the rich biodiversity and horticultural heritage of Thailand and the Greater Mekong Region." data-zh="乌隆他尼国际园艺博览会获得国际园艺生产者协会（AIPH）认证为最高级别A1级博览会，主题为"生命的多样性——品味绿色，和谐共生"。博览会在乌隆他尼府重要的生态湿地——农丹湿地举办，将展示泰国和大湄公河地区丰富的生物多样性和园艺遗产。">
-                    มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด "Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน" งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี
-                </p>
-            </div>
-
-            <!-- Educational Disclaimer Card -->
-            <div class="disclaimer-card">
-                <span class="disclaimer-icon">💡</span>
-                <div class="disclaimer-text">
-                    <strong data-th="เว็บไซต์เพื่อการศึกษา" data-en="Educational Project Website" data-zh="教育学术项目网站">เว็บไซต์เพื่อการศึกษา</strong>
-                    <p data-th="เว็บไซต์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น ไม่มีวัตถุประสงค์ในเชิงพาณิชย์ โค้ดและข้อมูลอ้างอิงและพัฒนาต้นแบบมาจากเว็บไซต์หลักของโครงการอย่างเป็นทางการ (udonthaniexpo2026.com)" 
-                       data-en="This website is created for educational purposes only and has no commercial intent. The design, code, and content refer to the official Udon Thani Expo 2026 website (udonthaniexpo2026.com)." 
-                       data-zh="本网站仅用于教育和学术目的，无任何商业用途。网站的设计、代码和内容参考并来源于2026年乌隆他尼世界园艺博览会官方网站 (udonthaniexpo2026.com)。">
-                        เว็บไซต์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น ไม่มีวัตถุประสงค์ในเชิงพาณิชย์ โค้ดและข้อมูลอ้างอิงและพัฒนาต้นแบบมาจากเว็บไซต์หลักของโครงการอย่างเป็นทางการ (udonthaniexpo2026.com)
-                    </p>
+            <div class="about-content-wrapper">
+                <div class="about-text-side">
+                    <div class="section-header">
+                        <span class="section-tag" data-th="เกี่ยวกับงาน" data-en="About the Expo" data-zh="关于博览会">เกี่ยวกับงาน</span>
+                        <h2 class="section-title" data-th="ความหลากหลายแห่งชีวิต" data-en="Diversity of Life" data-zh="生命的多样性">ความหลากหลายแห่งชีวิต</h2>
+                        <p class="section-desc" data-th="มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด 'Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน' งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี" data-en="The Udon Thani International Horticultural Expo, endorsed by the International Association of Horticultural Producers (AIPH) as an A1-level exposition — the highest tier — carries the theme 'Diversity of Life — Taste for Greens, Living in Harmony.' Held at the Nong Daeng Wetland, a vital ecological site in Udon Thani Province, this grand event will showcase the rich biodiversity and horticultural heritage of Thailand and the Greater Mekong Region." data-zh="乌隆他尼国际园艺博览会获得国际园艺生产者协会（AIPH）认证为最高级别A1级博览会，主题为"生命的多样性——品味绿色，和谐共生"。博览会在乌隆他尼府重要的生态湿地——农丹湿地举办，将展示泰国和大湄公河地区丰富的生物多样性和园艺遗产。">
+                            มหกรรมพืชสวนโลก จังหวัดอุดรธานี ประเทศไทย ได้รับการรับรองจากสมาคมพืชสวนระหว่างประเทศ (AIPH) ให้เป็นเจ้าภาพจัดงานมหกรรมพืชสวนโลกระดับ A1 ซึ่งเป็นระดับสูงสุด ภายใต้แนวคิด "Diversity of Life — รับรสชาติแห่งพฤกษา ใช้ชีวิตอย่างกลมกลืน" งานจัดขึ้น ณ พื้นที่ชุ่มน้ำหนองแด ซึ่งเป็นพื้นที่ชุ่มน้ำที่สำคัญของจังหวัดอุดรธานี
+                        </p>
+                        <p class="section-desc" data-th="งานนี้เป็นเวทีสำคัญระดับโลกในการแสดงศักยภาพทางด้านพืชสวนและเกษตรกรรมของไทย พร้อมทั้งเป็นพื้นที่แลกเปลี่ยนองค์ความรู้ นวัตกรรม และความงดงามทางวัฒนธรรมที่เชื่อมโยงผู้คนเข้ากับธรรมชาติ เพื่อมุ่งสู่อนาคตที่ยั่งยืนร่วมกัน" data-en="This event is a major global platform to showcase Thailand's horticultural and agricultural potential, while serving as a space for exchanging knowledge, innovation, and cultural beauty that connects people with nature towards a shared sustainable future." data-zh="此次活动是向世界展示泰国园艺和农业潜力的重要全球平台，同时也是交流知识、创新和文化之美的空间，将人们与自然联系起来，共同迈向可持续的未来。">
+                            งานนี้เป็นเวทีสำคัญระดับโลกในการแสดงศักยภาพทางด้านพืชสวนและเกษตรกรรมของไทย พร้อมทั้งเป็นพื้นที่แลกเปลี่ยนองค์ความรู้ นวัตกรรม และความงดงามทางวัฒนธรรมที่เชื่อมโยงผู้คนเข้ากับธรรมชาติ เพื่อมุ่งสู่อนาคตที่ยั่งยืนร่วมกัน
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="about-grid">
-                <!-- Large Master Plan Map Container -->
-                <div class="interactive-map-wrapper">
-                    <div class="interactive-map" id="interactiveMap">
-                        <img src="images/about-section.png" alt="Expo Master Plan" class="map-base-img">
-
-                        <!-- Chinese overlay labels (Only shown when page language is Chinese) -->
-                        <div class="map-zh-label" style="top:4%; left:36%;">综合管理大楼</div>
-                        <div class="map-zh-label" style="top:11%; left:20%;">温室展馆</div>
-                        <div class="map-zh-label" style="top:7%; left:56%;">兰花展馆</div>
-                        <div class="map-zh-label" style="top:6%; left:77%;">皇家纪念馆</div>
-                        <div class="map-zh-label" style="top:16%; left:81%;">企业展园</div>
-                        <div class="map-zh-label" style="top:21%; left:14%;">伊桑文化村</div>
-                        <div class="map-zh-label" style="top:27%; left:22%;">国际展园</div>
-                        <div class="map-zh-label" style="top:37%; left:10%;">红莲池 / 湿地步道</div>
-                        <div class="map-zh-label" style="top:45%; left:27%;">活动游乐场</div>
-                        <div class="map-zh-label" style="top:58%; left:14%;">跨水大桥</div>
-                        <div class="map-zh-label" style="top:40%; left:76%;">花卉观赏植物园</div>
-                        <div class="map-zh-label" style="top:48%; left:86%;">仙人掌展馆</div>
-                        <div class="map-zh-label" style="top:61%; left:79%;">室内植物展馆</div>
-                        <div class="map-zh-label" style="top:71%; left:71%;">室外植物展 / 蝴蝶花园</div>
-                        <div class="map-zh-label" style="top:81%; left:56%;">信息咨询中心</div>
-                        <div class="map-zh-label" style="top:92%; left:40%;">接待大厅 / 餐饮中心</div>
-                    </div>
-                    <div class="about-image-badge" style="position:relative; display:inline-flex; margin-top:16px;">
-                        <span class="badge-icon">🏆</span>
-                        <span data-th="ระดับ A1 โดย AIPH" data-en="A1 Level by AIPH" data-zh="AIPH A1级认证">ระดับ A1 โดย AIPH</span>
-                    </div>
+                <div class="about-image-side">
+                    <!-- Using agri-innovation image as it showcases nature/beauty well -->
+                    <img src="images/agri-innovation.png" alt="Diversity of Life" loading="lazy">
                 </div>
             </div>
 
@@ -205,32 +201,49 @@
         </div>
     </section>
 
-    <!-- ===== STATS SECTION ===== -->
-    <section class="stats-section">
+    <!-- ===== MASTER PLAN SECTION ===== -->
+    <section id="master-plan" class="master-plan-section">
         <div class="container">
-            <div class="stats-header">
-                <h3 class="stats-title" data-th="สถิติและข้อมูลสำคัญ" data-en="Key Statistics" data-zh="关键数据与统计">สถิติและข้อมูลสำคัญ</h3>
+            <div class="section-header">
+                <span class="section-tag" data-th="ผังพื้นที่จัดงาน" data-en="Expo Master Plan" data-zh="博览会总体规划">ผังพื้นที่จัดงาน</span>
+                <h2 class="section-title" data-th="สำรวจพื้นที่การจัดงาน" data-en="Explore the Expo Grounds" data-zh="探索博览会场地">สำรวจพื้นที่การจัดงาน</h2>
+                <p class="section-desc" data-th="บนพื้นที่กว่า 1,030 ไร่ ณ พื้นที่ชุ่มน้ำหนองแด ถูกออกแบบและจัดสรรอย่างลงตัวเพื่อรองรับผู้เข้าชมและกิจกรรมระดับโลก" data-en="Spanning over 1,030 rai at the Nong Daeng Wetland, the area is perfectly designed and allocated to accommodate global visitors and activities." data-zh="在农丹湿地超过1030莱的面积上，经过完美设计和分配，以容纳全球游客和活动。">
+                    บนพื้นที่กว่า 1,030 ไร่ ณ พื้นที่ชุ่มน้ำหนองแด ถูกออกแบบและจัดสรรอย่างลงตัวเพื่อรองรับผู้เข้าชมและกิจกรรมระดับโลก
+                </p>
             </div>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="135">0</span>
-                    <span class="stat-label" data-th="วัน" data-en="Days" data-zh="天">วัน</span>
+            
+            <div class="interactive-map-wrapper">
+                <div class="interactive-map" id="interactiveMap">
+                    <img src="images/about-section.png" alt="Expo Master Plan" class="map-base-img">
+
+                    <!-- Chinese overlay labels (Only shown when page language is Chinese) -->
+                    <div class="map-zh-label" style="top:4%; left:36%;">综合管理大楼</div>
+                    <div class="map-zh-label" style="top:11%; left:20%;">温室展馆</div>
+                    <div class="map-zh-label" style="top:7%; left:56%;">兰花展馆</div>
+                    <div class="map-zh-label" style="top:6%; left:77%;">皇家纪念馆</div>
+                    <div class="map-zh-label" style="top:16%; left:81%;">企业展园</div>
+                    <div class="map-zh-label" style="top:21%; left:14%;">伊桑文化村</div>
+                    <div class="map-zh-label" style="top:27%; left:22%;">国际展园</div>
+                    <div class="map-zh-label" style="top:37%; left:10%;">红莲池 / 湿地步道</div>
+                    <div class="map-zh-label" style="top:45%; left:27%;">活动游乐场</div>
+                    <div class="map-zh-label" style="top:58%; left:14%;">跨水大桥</div>
+                    <div class="map-zh-label" style="top:40%; left:76%;">花卉观赏植物园</div>
+                    <div class="map-zh-label" style="top:48%; left:86%;">仙人掌展馆</div>
+                    <div class="map-zh-label" style="top:61%; left:79%;">室内植物展馆</div>
+                    <div class="map-zh-label" style="top:71%; left:71%;">室外植物展 / 蝴蝶花园</div>
+                    <div class="map-zh-label" style="top:81%; left:56%;">信息咨询中心</div>
+                    <div class="map-zh-label" style="top:92%; left:40%;">接待大厅 / 餐饮中心</div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label" data-th="ประเทศ" data-en="Countries" data-zh="国家">ประเทศ</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="1030">0</span>
-                    <span class="stat-label" data-th="ไร่" data-en="Rai (Area)" data-zh="莱（面积）">ไร่</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">M+</span>
-                    <span class="stat-label" data-th="ผู้เข้าชมที่คาดหวัง" data-en="Expected Visitors" data-zh="预计游客">ผู้เข้าชมที่คาดหวัง</span>
+                <div class="about-image-badge" style="position:relative; display:inline-flex; margin-top:16px;">
+                    <span class="badge-icon">🏆</span>
+                    <span data-th="ระดับ A1 โดย AIPH" data-en="A1 Level by AIPH" data-zh="AIPH A1级认证">ระดับ A1 โดย AIPH</span>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
     <!-- ===== HIGHLIGHTS SECTION ===== -->
     <section id="highlights" class="highlights-section">
@@ -250,6 +263,9 @@
                     </div>
                 </div>
                 <div class="highlight-card">
+                    <div class="highlight-image-wrapper">
+                        <img src="images/cultural-performance.png" alt="Cultural Performances" loading="lazy">
+                    </div>
                     <div class="highlight-icon">🎭</div>
                     <h3 data-th="การแสดงทางวัฒนธรรม" data-en="Cultural Performances" data-zh="文化表演">การแสดงทางวัฒนธรรม</h3>
                     <p data-th="ชมการแสดงทางวัฒนธรรมจากศิลปินทั้งในและต่างประเทศ พร้อมกิจกรรมเวิร์คชอปสุดพิเศษ" data-en="Enjoy cultural performances from both local and international artists, plus exclusive workshops." data-zh="欣赏国内外艺术家的文化表演，参加独家工作坊。">
@@ -257,6 +273,9 @@
                     </p>
                 </div>
                 <div class="highlight-card">
+                    <div class="highlight-image-wrapper">
+                        <img src="images/agri-innovation.png" alt="Agri Innovation" loading="lazy">
+                    </div>
                     <div class="highlight-icon">🔬</div>
                     <h3 data-th="นวัตกรรมเกษตร" data-en="Agri Innovation" data-zh="农业创新">นวัตกรรมเกษตร</h3>
                     <p data-th="พบกับเทคโนโลยีการเกษตรสมัยใหม่ นวัตกรรมสีเขียว และเทคโนโลยีเพื่อความยั่งยืน" data-en="Discover modern agricultural technologies, green innovations, and sustainability solutions." data-zh="探索现代农业技术、绿色创新和可持续发展解决方案。">
@@ -264,6 +283,9 @@
                     </p>
                 </div>
                 <div class="highlight-card">
+                    <div class="highlight-image-wrapper">
+                        <img src="images/local-cuisine.png" alt="Local Cuisine" loading="lazy">
+                    </div>
                     <div class="highlight-icon">🍜</div>
                     <h3 data-th="อาหารท้องถิ่น" data-en="Local Cuisine" data-zh="当地美食">อาหารท้องถิ่น</h3>
                     <p data-th="ลิ้มรสอาหารอีสานแท้ๆ และอาหารนานาชาติจากร้านอาหารชื่อดังทั้งในและต่างประเทศ" data-en="Savor authentic Isan cuisine and international dishes from renowned restaurants." data-zh="品尝正宗伊桑美食和来自知名餐厅的国际美食。">
@@ -274,11 +296,59 @@
         </div>
     </section>
 
+    <!-- ===== ATTRACTIONS SECTION ===== -->
+    <section class="attractions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-th="ท่องเที่ยวอุดรธานี" data-en="Visit Udon Thani" data-zh="游览乌隆他尼">ท่องเที่ยวอุดรธานี</span>
+                <h2 class="section-title" data-th="สถานที่ท่องเที่ยวแนะนำ" data-en="Recommended Attractions" data-zh="推荐景点">สถานที่ท่องเที่ยวแนะนำ</h2>
+                <p class="section-desc" data-th="ค้นพบความสวยงามและเสน่ห์ของอุดรธานี ระหว่างการมาเยือนงานพืชสวนโลก" data-en="Discover the beauty and charm of Udon Thani during your visit to the Expo." data-zh="在参观博览会期间，发现乌隆他尼的美丽与魅力。">
+                    ค้นพบความสวยงามและเสน่ห์ของอุดรธานี ระหว่างการมาเยือนงานพืชสวนโลก
+                </p>
+            </div>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="images/red-lotus.png" alt="Red Lotus Sea" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-th="ทะเลบัวแดง" data-en="Red Lotus Sea" data-zh="红莲海">ทะเลบัวแดง</h3>
+                        <p data-th="ตื่นตากับความงดงามของดอกบัวแดงนับล้านดอกที่เบ่งบานเต็มท้องน้ำกุมภวาปี" data-en="Marvel at the beauty of millions of red lotuses blooming across the Kumphawapi lake." data-zh="惊叹于广阔湖面上盛开的数百万朵红莲之美。">
+                            ตื่นตากับความงดงามของดอกบัวแดงนับล้านดอกที่เบ่งบานเต็มท้องน้ำกุมภวาปี
+                        </p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="images/ban-chiang.png" alt="Ban Chiang Museum" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-th="พิพิธภัณฑสถานแห่งชาติบ้านเชียง" data-en="Ban Chiang Museum" data-zh="班清国家博物馆">พิพิธภัณฑสถานแห่งชาติบ้านเชียง</h3>
+                        <p data-th="แหล่งมรดกโลกที่สำคัญ สัมผัสอารยธรรมเก่าแก่และเครื่องปั้นดินเผาลายเขียนสีแดงอันเป็นเอกลักษณ์" data-en="A UNESCO World Heritage site showcasing ancient civilization and iconic red-painted pottery." data-zh="联合国教科文组织世界遗产，展示古老文明和标志性的红色彩绘陶器。">
+                            แหล่งมรดกโลกที่สำคัญ สัมผัสอารยธรรมเก่าแก่และเครื่องปั้นดินเผาลายเขียนสีแดงอันเป็นเอกลักษณ์
+                        </p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="images/nong-prajak.png" alt="Nong Prajak Park" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-th="สวนสาธารณะหนองประจักษ์" data-en="Nong Prajak Park" data-zh="农巴乍公园">สวนสาธารณะหนองประจักษ์</h3>
+                        <p data-th="ปอดขนาดใหญ่ใจกลางเมือง จุดพักผ่อนหย่อนใจและถ่ายรูปกับน้องเป็ดเหลืองสุดน่ารัก" data-en="A large green lung in the city center, perfect for relaxing and taking photos with the giant yellow duck." data-zh="市中心的大型绿肺，非常适合放松和与巨大的黄鸭拍照。">
+                            ปอดขนาดใหญ่ใจกลางเมือง จุดพักผ่อนหย่อนใจและถ่ายรูปกับน้องเป็ดเหลืองสุดน่ารัก
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== EVENT INFO SECTION ===== -->
     <section id="info" class="info-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-th="ข้อมูลงาน" data-en="Event Information" data-zh="活动信息">ข้อมูลงาน</span>
+                <span class="section-tag" data-th="คู่มือการเที่ยวชมงาน" data-en="Visitor Guide" data-zh="游客指南">คู่มือการเที่ยวชมงาน</span>
                 <h2 class="section-title" data-th="วางแผนการเดินทาง" data-en="Plan Your Visit" data-zh="规划您的行程">วางแผนการเดินทาง</h2>
             </div>
             <div class="info-grid">
@@ -308,6 +378,20 @@
                     <h3 data-th="การเดินทาง" data-en="Getting There" data-zh="交通指南">การเดินทาง</h3>
                     <p data-th="สะดวกด้วยเครื่องบิน รถไฟ และรถโดยสาร มีบริการรถรับส่งจากสนามบินและสถานีขนส่ง" data-en="Convenient access by air, rail, and bus. Shuttle services available from airport and bus terminal." data-zh="可乘飞机、火车和巴士前往。机场和汽车站提供班车服务。">
                         สะดวกด้วยเครื่องบิน รถไฟ และรถโดยสาร มีบริการรถรับส่งจากสนามบินและสถานีขนส่ง
+                    </p>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-card-icon">🎟️</div>
+                    <h3 data-th="บัตรเข้าชมงาน" data-en="Tickets" data-zh="门票">บัตรเข้าชมงาน</h3>
+                    <p data-th="เปิดจำหน่ายบัตรล่วงหน้าเร็วๆ นี้ พร้อมโปรโมชั่นพิเศษสำหรับเข้าชมแบบหมู่คณะ" data-en="Early bird tickets available soon with special promotions for group visits." data-zh="早鸟票即将发售，更有团体参观特别优惠。">
+                        เปิดจำหน่ายบัตรล่วงหน้าเร็วๆ นี้ พร้อมโปรโมชั่นพิเศษสำหรับเข้าชมแบบหมู่คณะ
+                    </p>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-card-icon">🅿️</div>
+                    <h3 data-th="สิ่งอำนวยความสะดวก" data-en="Facilities" data-zh="设施">สิ่งอำนวยความสะดวก</h3>
+                    <p data-th="มีจุดจอดรถกว้างขวาง บริการวีลแชร์ และรถรางรับส่งฟรีครอบคลุมทั่วบริเวณงาน" data-en="Ample parking, wheelchair services, and free internal shuttle trams covering the entire area." data-zh="充足的停车位，提供轮椅服务以及覆盖全区的免费内部班车。">
+                        มีจุดจอดรถกว้างขวาง บริการวีลแชร์ และรถรางรับส่งฟรีครอบคลุมทั่วบริเวณงาน
                     </p>
                 </div>
             </div>

@@ -191,42 +191,37 @@ const StatsCounter = {
 
 
 // ==========================================
-// ✨ PARTICLE EFFECT
+// ✨ PARTICLE EFFECT (Mist & Glow)
 // ==========================================
 const ParticleEffect = {
     init() {
         const container = document.getElementById('particles');
         if (!container) return;
 
-        const count = window.innerWidth < 768 ? 15 : 30;
+        const count = window.innerWidth < 768 ? 20 : 45;
 
         for (let i = 0; i < count; i++) {
             const particle = document.createElement('div');
-            const isLeaf = Math.random() > 0.65;
-
-            if (isLeaf) {
-                particle.className = 'particle leaf-particle';
-                const leaves = ['🍃', '🍂', '🌱', '🌸', '💮'];
-                particle.textContent = leaves[Math.floor(Math.random() * leaves.length)];
-                particle.style.fontSize = (12 + Math.random() * 12) + 'px';
-                particle.style.background = 'none';
-            } else {
-                particle.className = 'particle dot-particle';
-                particle.style.width = (3 + Math.random() * 5) + 'px';
+            const type = Math.random();
+            
+            if (type > 0.65) {
+                particle.className = 'particle mist-particle';
+                particle.style.width = (60 + Math.random() * 80) + 'px';
                 particle.style.height = particle.style.width;
-                const colors = [
-                    'rgba(201, 164, 62, 0.6)',
-                    'rgba(201, 164, 62, 0.4)',
-                    'rgba(13, 124, 61, 0.4)',
-                    'rgba(255, 255, 255, 0.3)'
-                ];
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+            } else if (type > 0.35) {
+                particle.className = 'particle glow-particle';
+                particle.style.width = (4 + Math.random() * 6) + 'px';
+                particle.style.height = particle.style.width;
+            } else {
+                particle.className = 'particle droplet-particle';
+                particle.style.width = (2 + Math.random() * 4) + 'px';
+                particle.style.height = particle.style.width;
             }
 
             particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 8 + 's';
-            particle.style.animationDuration = (isLeaf ? 10 + Math.random() * 10 : 6 + Math.random() * 6) + 's';
+            particle.style.top = (80 + Math.random() * 40) + '%';
+            particle.style.animationDelay = (Math.random() * 15) + 's';
+            particle.style.animationDuration = (12 + Math.random() * 18) + 's';
 
             container.appendChild(particle);
         }
@@ -246,6 +241,7 @@ const ScrollReveal = {
             '.about-image',
             '.directory-card',
             '.highlight-card',
+            '.attraction-card',
             '.info-card',
             '.stat-item',
             '.map-container',
@@ -292,6 +288,62 @@ const ScrollToTop = {
 
 
 // ==========================================
+// 🎢 ADVANCED EFFECTS (Parallax, Progress, Tilt)
+// ==========================================
+const AdvancedEffects = {
+    init() {
+        const progressBar = document.getElementById('scrollProgressBar');
+        const heroImg = document.querySelector('.hero-bg img');
+        
+        // Scroll Events for Progress Bar & Parallax
+        window.addEventListener('scroll', () => {
+            // 1. Progress Bar
+            if (progressBar) {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + "%";
+            }
+            
+            // 2. Parallax Effect for Hero
+            if (heroImg) {
+                const scrollY = window.scrollY;
+                if (scrollY < window.innerHeight) {
+                    heroImg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.05)`;
+                }
+            }
+        });
+
+        // 3. 3D Tilt Effect on Cards
+        const cards = document.querySelectorAll('.highlight-card, .attraction-card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                // Calculate rotation (max 8 degrees for subtlety)
+                const rotateX = ((y - centerY) / centerY) * -8;
+                const rotateY = ((x - centerX) / centerX) * 8;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`;
+                card.style.transition = 'none';
+                card.style.zIndex = '10'; // Bring to front
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
+                card.style.zIndex = '1';
+            });
+        });
+    }
+};
+
+// ==========================================
 // 🚀 INITIALIZE ALL
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -302,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ParticleEffect.init();
     ScrollReveal.init();
     ScrollToTop.init();
+    AdvancedEffects.init();
 
     // Smooth body transition for lang switch
     document.body.style.transition = 'opacity 0.2s ease';
