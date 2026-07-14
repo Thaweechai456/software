@@ -1189,6 +1189,139 @@ html[lang="zh-CN"] .map-zh-label {
 
 
 /* ==========================================
+   👤 ABOUT ME SECTION
+   ========================================== */
+.aboutme-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0a1628 0%, #0d2818 50%, #0a1628 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutme-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(13, 124, 61, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(201, 164, 62, 0.06) 0%, transparent 50%);
+    animation: softFloat 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.aboutme-card {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: var(--transition-smooth);
+}
+
+.aboutme-card:hover {
+    border-color: rgba(13, 124, 61, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(13, 124, 61, 0.1);
+    transform: translateY(-4px);
+}
+
+.aboutme-photo {
+    flex-shrink: 0;
+}
+
+.aboutme-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(13, 124, 61, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(13, 124, 61, 0.2);
+    transition: var(--transition-smooth);
+}
+
+.aboutme-card:hover .aboutme-photo img {
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4), 0 0 50px rgba(13, 124, 61, 0.3);
+    transform: scale(1.05);
+}
+
+.aboutme-info h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #c9a43e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aboutme-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.aboutme-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.aboutme-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.aboutme-value {
+    font-size: 14px;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.aboutme-desc p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .aboutme-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 32px 24px;
+    }
+
+    .aboutme-details {
+        justify-content: center;
+    }
+
+    .aboutme-info h3 {
+        font-size: 22px;
+    }
+
+    .aboutme-photo img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+/* ==========================================
    🦶 FOOTER
    ========================================== */
 .footer-section {

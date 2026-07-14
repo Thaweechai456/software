@@ -242,6 +242,7 @@ const ScrollReveal = {
             '.directory-card',
             '.highlight-card',
             '.attraction-card',
+            '.aboutme-card',
             '.info-card',
             '.stat-item',
             '.map-container',
